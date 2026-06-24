@@ -1,0 +1,4 @@
+customer_id,login_frequency,days_since_last_purchase,cart_abandonment_rate,base_price,competitor_price,stock_level,days_to_restock,search_velocity_multiplier
+USR-5511,14,22,0.41,99.99,105.00,45,7,1.3
+USR-2281,30,1,0.05,249.99,249.99,18,14,2.1
+USR-8812,2,94,0.88,15.50,14.00,200,1,0.6
