@@ -1,0 +1,52 @@
+# Shield Core v1.2: E-Commerce Price Optimizer & Churn Shield (SaaS)
+
+Shield Core is an enterprise-grade, multi-tenant MLOps SaaS application that resolves a critical business tension in high-volume e-commerce: maximizing profit margins via dynamic pricing without alienating price-sensitive loyal users. 
+
+The platform implements an adaptive, data-driven architecture. Users log in securely, upload operational logistics CSV sheets, and witness the interface dynamically morph to match the data profile—activating predictive regression loops for price adjustments or classification systems for customer attrition mitigation.
+
+---
+
+## 🚀 Core Features
+
+* **Secure Multi-Tenant Auth Gate:** Implements robust token authentication using JSON Web Tokens (JWT) and cryptographically scrambled credential hashing (`passlib/bcrypt`).
+* **Adaptive UI Engine:** Built with Vite and Tailwind CSS v4, the dashboard schema dynamically maps, displays, or hides modular views based on the structural properties of incoming data array metrics.
+* **Intelligent Vocabulary Mapping:** Bypasses rigid formatting constraints by utilizing a built-in alias dictionary that gracefully handles and standardizes disparate column titles (`user_id`, `days_offline`, etc.) automatically.
+* **High-Performance ML Pipeline:** Integrates pre-trained Predictive Elastic Regression and Random Forest Classification models loaded efficiently into the FastAPI system state memory to optimize runtime latency.
+* **Persistent Storage Store:** Utilizes SQLAlchemy ORM mapped over an SQLite engine to handle data isolation parameters flawlessly across separate user workspace modules.
+
+---
+
+## 🛠️ Tech Stack Matrix
+
+| Layer | Technologies Used |
+| :--- | :--- |
+| **Frontend UI Canvas** | React 18, Vite, Tailwind CSS v4, ES6+ Javascript |
+| **Backend API Engine** | Python 3.x, FastAPI, Uvicorn, PyJWT, Passlib |
+| **Data & ML Science** | Pandas, Scikit-Learn, Joblib, NumPy |
+| **Database ORM Store** | SQLAlchemy, SQLite Engine |
+
+---
+
+## 📂 System Architecture Breakdown
+
+```text
+ecommerce-ml-shield/
+├── backend/
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── auth.py          # User registration, validation, & login processing
+│   │   │   ├── routers.py       # CSV extraction and ML pipeline inferencing
+│   │   │   └── schemas.py       # Pydantic data validation schemas
+│   │   ├── core/
+│   │   │   └── security.py      # Password encryption & temporary JWT generators
+│   │   ├── database.py          # SQLAlchemy base configuration & SQLite schema definitions
+│   │   └── main.py              # Application initialization, CORS policies, & route mounts
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── DashboardView.jsx # Premium analytics metrics tracking grid
+│   │   │   └── UploadScreen.jsx  # Drag-and-drop ingestion desk with alias dictionary lookup
+│   │   ├── App.jsx              # Global session router state machine
+│   │   ├── index.css            # Tailwind CSS v4 directive hooks
+│   │   └── main.jsx             # React Virtual DOM bootstrapping setup
+│   └── vite.config.js           # Vite server optimization settings
